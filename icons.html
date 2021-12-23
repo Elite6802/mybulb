@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{
+background-color:#2e3e50;
+}
+img{
+width:px;
+height:px;
+display:block;
+margin-right:auto;
+margin-left:auto;
+}
+button{
+width:80px;
+Height:50px;
+margin:20px;
+margin-top:20vh;
+border:none;
+}
+.bulbon{
+background-color:green;
+}
+.bulbon:hover{
+box-shadow:-2px 4px 15px yellow,-4px 8px 25px green;
+}
+.bulboff{
+background-color:red;
+}
+.bulboff:hover{
+box-shadow:-1px -1px 25px 5px;
+}
+
+
+div{
+width:250px;
+height:auto;
+margin-top:20px;
+padding:20px;
+margin-left:50px;
+border-radius:20px;
+box-shadow:-2px 4px 10px yellow,-4px 8px 20px green;
+}
+
+</style>
+</head>
+<body>
+ <div>
+ <img src="/storage/emulated/0/Projects/pic_bulboff.gif" id="mybulb">
+ 
+ <button class="bulbon" onclick="document.getElementById('mybulb').src='/storage/emulated/0/Projects/pic_bulbon.gif'" = ">ON</button>
+  <button class="bulboff" onclick="document.getElementById('mybulb').src='/storage/emulated/0/Projects/pic_bulboff.gif'" = ">OFF</button>
+  </div>
+  <script type="text/javascript">
+  var name = prompt("Enter your name:");
+  alert("Hello " +name+ "\nUse the on and off buttons to switch the bulb on and off.\nMade by Kelvin @Elite_programmer");
+  </script>
+</body>
+</html>
